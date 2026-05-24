@@ -31,8 +31,8 @@ The critical correctness goal is enforced in the database: if two requests try t
 3. Set `DATABASE_URL` to a PostgreSQL-compatible database. For local Docker PostgreSQL, a typical value is:
 
    ```env
-   DATABASE_URL="postgresql://postgres:postgres@localhost:5432/inventory_reservation?schema=public"
-   DIRECT_URL="postgresql://postgres:postgres@localhost:5432/inventory_reservation?schema=public"
+   DATABASE_URL = your_neon_url
+   DIRECT_URL = your_neon_url
    ```
 
 4. Generate Prisma client and run migrations:
